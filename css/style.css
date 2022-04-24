@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+*{  scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;} /*RESET*/
+    
+ h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto Mono', monospace, Arial;}/*Formatação geral dos Títulos*/
+
+a,ul{
+    text-decoration:none;
+    list-style: none;
+    } /*Formatação geral dos links e listas*/ 
+
+body{
+    background-color: #242424;
+    line-height: 2;
+}
+
+.top__button {
+    position: fixed;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: yellowgreen;
+    color: black;
+    text-align: center;
+    z-index: 100;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    padding-top: .3em;
+    font-size: 1.2em;
+    transition: .5s;
+}
+.top__button:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+/*BOTÃO PARA O TOPO DA TELA*/
+
+/*----------------------------------------------------*/
+
+header .logo{
+    margin: 1em;
+    text-align: center;
+}
+header .logo img{
+    height: 5em;
+}
+
+header .nav__bar {
+    text-align: center;
+    box-shadow: 0 1.5em 2em -1.9em ;
+}
+
+.nav__bar ul li{
+    background-color: greenyellow;
+    margin: 5px 0;
+}
+
+.nav__bar ul li a{
+    font-weight: bold;
+    color: black;
+    letter-spacing:4px;
+    display: block;
+    padding: 1em;
+    transition: .5s;
+}
+
+.nav__bar ul li a:hover{
+    color: yellow;
+    background-color: rgba(0,0,0, .5);
+    transition: .3s;
+}/*---HEADER---- */
+
+/*----------------------------------------------------*/
+
+.first__section{
+    text-align: center;
+    padding: 1em;
+}
+
+.first__section .icon__play{
+    display: none;
+}
+.first__section::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin: 3em 0;
+    width: 90%;
+    height: 1px;
+    background-color: yellow;
+}
+
+.first__section__title{
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 1.1em;
+    margin: 2em .5em;
+}
+
+.first__section__subtitle {
+    color: white;
+    font-size: .8em;
+    font-weight: normal;
+    margin: 1em .5rem;
+}
+
+.pattern__button{
+    letter-spacing:4px;
+    background-color: greenyellow;
+    color: black;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 6px;
+    transition: .5;
+} 
+.pattern__button:hover{
+    color: yellow;
+    background-color: rgba(172, 255, 47, 0.211);
+    transition: .4s;
+}/*---FIRST SECTION----*/
+
+/*----------------------------------------------------*/
+
+.second__section {
+    background-color: rgba(255, 255, 255, 0.07);
+    text-align: center;
+    padding: 1em;
+}
+.second__section::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 1px;
+    background-color: yellow;
+}
+.second__section .icon {
+    font-size: 3.5em;
+    color: greenyellow;
+}
+.second__section .second__section__article{
+    margin: 2em 0;
+}
+.second__section .second__section__article h3{
+    margin: 1em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: yellow;
+}
+.second__section .second__section__article p{
+    color: white;
+}/*---- SECOND SECTION--- */
+
+/*----------------------------------------------------*/
+
+.third__section {
+    padding: 2em;
+}
+
+.third__section .third__section__article{
+    margin: 2em 0;
+}
+.third__section .third__section__article h3{
+    color: greenyellow;
+    letter-spacing:4px;
+    font-weight: normal;
+}
+.third__section .third__section__article p{
+    color: white;
+    margin: 1em 0;
+}
+.third__section .third__section__article a{
+    background-color: yellowgreen;
+    color: black;
+    letter-spacing:4px;
+    transition: .5s;
+}
+.third__section .third__section__article a:hover{
+    color: yellow;
+    background-color: rgba(172, 255, 47, 0.512);
+    transition: .2s;
+}/*------THIRD SECTION------*/
+
+/*----------------------------------------------------*/
+
+footer {
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.226);
+}
+
+footer .social__media {
+    text-align: center;
+    font-size: 2em;
+    color: #ccc;
+    background-color:rgba(255, 255, 255, 0.226);
+}
+footer .social__media a .icon{
+    display:inline-block; 
+    margin: 0 1em;
+    color: rgba(255, 255, 255, 0.622);
+    transition: .5s;
+}
+
+footer .social__media a .icon:hover{
+    display: inline-block;
+    color: greenyellow;
+    transition: .5s;
+    transform: translateY(-5px);
+}
+footer .footer__text{
+    padding: 1em;
+}
+footer .footer__text .footer__tittle{
+    font-weight: bold;
+    color: white;
+}
+footer .footer__text .footer__text {
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.7);
+}/*----FOOTER------*/
+
+/*----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*FORMATAÇÃO PARA DISPOSITIVO COM NO MÍNIMO 780PX(48.75em) DE LARGURA*/
+@media screen and (min-width:48.75em){
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 1.5em 2em -1.9em black ;
+    }
+
+    header .logo{
+        margin: 1.5em 0 1em 2em;
+    } 
+
+    header .logo img{
+        height: 4em;
+    }
+
+    header ul{
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin: 1.5em 1em;
+    }
+    
+    .nav__bar{
+        position: relative;
+    }
+
+    header .nav__bar ul li{
+        background-color: transparent;
+        margin: 0 1em;
+    }
+    header .nav__bar ul li a{
+        font-size: .7em;
+        color: greenyellow;
+        border-bottom: solid 3px greenyellow;
+    }
+    header .nav__bar ul li a:hover{
+        transform: translateY(-10px);
+        font-size: .7em;
+        color: greenyellow;
+        border-bottom: solid 3px greenyellow;
+    }/*HEADER TABLET*/
+
+    /*---------------------------------------------------*/
+
+    .first__section .icon__play{
+        display: inline;
+    }
+
+    .first__section .first__section__title {
+        margin: 0;
+    }/*FIRST SECTION TABLET*/
+
+    /*----------------------------------------------------*/
+
+    .second__section .second__section__article{
+        padding: 2em;
+        width: 50%;
+        float: left;
+    }/*SECOND SECTION TABLET*/
+
+    /*----------------------------------------------------*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORMATAÇÃO PARA DISPOSITIVO COM NO MÍNIMO 1000PX(62.5em) DE LARGURA*/
+@media screen and (min-width:62.5em){
+    .first__section{ 
+       background: url(../imagens/bg_topo_1198x670.jpg);
+       height: 40em;
+       padding-top: 18em;
+    }
+
+    /*----------------------------------------------------*/
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORMATAÇÃO PARA DISPOSITIVO COM NO MÍNIMO 1200PX(75em) DE LARGURA*/
+@media screen and (min-width:75em){
+
+    header {
+        height: 4.5em;
+    }
+    header .logo {
+        margin: 1.2em 0 1em 6em;
+    }
+    header .logo img{
+        height: 2em;
+    }
+
+    .nav__bar{
+        position: relative;
+    }
+
+    header .nav__bar ul li{
+        background-color: transparent;
+        margin: 0 1em;
+    }
+    header .nav__bar ul li a{
+        font-size: .7em;
+        color: greenyellow;
+        border-bottom: solid 3px greenyellow;
+    }/*-----HEADER DESKTOP------*/
+    
+    /*----------------------------------------------------*/
+
+    .first__section{ 
+        background: url(../imagens/bg_topo_1600x1374.jpg);
+        background-position: bottom;
+        height: 33em;
+        padding-top: 11em;
+     }
+     .first__section .first__section__title{
+         color: white;
+     }
+     .first__section .first__section__subtitle{
+         color: white;
+     }
+     .first__section .pattern__button:hover{
+         color: white;
+         background-color: rgba(172, 255, 47, 0.211);
+     }/*FIRST SECTION DESKTOP*/
+
+     /*----------------------------------------------------*/
+
+    .second__section .second__section__article{
+        width: 25%;
+        font-size: .8em;
+    }/*SECOND SECTION DESKTOP*/
+
+     /*----------------------------------------------------*/
+    .third__section {
+        display: flex;
+    }
+    .third__section .third__section__article{
+        margin: auto;
+        font-size: .8em;
+        width: 80%;
+    }/*THIRD SECTION DESKTOP*/
+    
+     /*----------------------------------------------------*/
+    footer .social__media{
+        background-color: transparent;
+        height: 45px;
+    }
+    footer .social__media a .icon{
+        font-size: .7em;
+    }
+    
+    footer .footer__text p {
+        margin: auto;
+        width: 70%;
+        font-size: .8em;
+    }
+    
+    footer .footer__text .footer__tittle{
+        font-size: 1em;
+    }/*FOOTER DESKTOP*/
+    
+    /*----------------------------------------------------*/
+}
