@@ -19,7 +19,7 @@ body{
     line-height: 2;
 }
 
-.top__button {
+.top__button{
     position: fixed;
     height: 2.5em;
     width: 2.5em;
@@ -71,7 +71,6 @@ header .nav__bar {
 
 .nav__bar ul li a:hover{
     color: yellow;
-    background-color: rgba(0,0,0, .5);
     transition: .3s;
 }/*---HEADER---- */
 
