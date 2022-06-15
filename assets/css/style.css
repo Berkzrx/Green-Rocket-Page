@@ -36,11 +36,15 @@ body{
 }
 .top__button:hover{
     transform: translateY(-5px);
-    transition: .5s;
+    transition: .1s;
 }
 /*BOTÃO PARA O TOPO DA TELA*/
 
 /*----------------------------------------------------*/
+
+header{
+    position: sticky;
+}
 
 header .logo{
     margin: 1em;
